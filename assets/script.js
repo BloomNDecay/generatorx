@@ -1,15 +1,28 @@
+//create a function to allow slider to raise or lower the amount of characters
 
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
+var CharacterRange = document.getElementById
+('CharacterRange')
+var CharacterNumber = document.getElementById
+('CharacterNumber')
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+CharacterRange.addEventListener('input', syncCharacterAmount)
+CharacterNumber.addEventListener('input', syncCharacterAmount)
 
-  passwordText.value = password;
-
+function syncCharacterAmount(e) {
+  var value = e.target.value
+  CharacterNumber.value = value
+  CharacterRange.value = value
 }
 
-// Add event listener to generate button
+
+var generateBtn = document.querySelector("#generate");
+
 generateBtn.addEventListener("click", writePassword);
+
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = password;
+    console.log(passwordText);
+}
