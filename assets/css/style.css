@@ -15,7 +15,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #080808;
   display: flex;
   justify-content: center;
 }
@@ -24,7 +24,7 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: blue;
+  background-color: rgb(255, 0, 0);
   border-radius: 15px 15px 15px;
   border:5px solid black;
   flex-direction: column;
@@ -34,7 +34,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(180, 100%, 100%);
+  color: rgb(8, 8, 8);
 }
 
 .card {
@@ -92,8 +92,8 @@ header {
 }
 
 .btn {
-  border: none;
-  background-color: rgb(19, 8, 175);
+  border:none;
+  background-color: rgb(175, 36, 8);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -106,7 +106,7 @@ header {
   text-align: center;
 }
 
-button[disabled] {
+button {
   cursor: default;
   background: #c0c7cf;
 }
